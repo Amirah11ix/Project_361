@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family:  'poppins', sans-serif;
+}
+.contact{
+	position:relative;
+	min-height:100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	background:linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50% ),url(a.jpg);
+	background-size:repeat;
+}
+.contact a{
+	min-width:25px;
+	height:25px;
+	background:#85c2ce;
+	justify-content:center;
+	align-items:center;
+	font-size:25px;
+	color:#fff
+}
+.contact .content{
+	max-height:800px;
+	text-align:center;
+}
+.contact .content h2{
+	font-size:36px;
+	font-weight:500;
+	color:#fff;
+}
+.contact .content p{
+	font-weight:300;
+	color:#fff;
+}
+.Container{
+	width:80%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:30px;
+	background:#fff;
+	border-radius:6px;
+	padding:30px 60px 40px 40px;
+	box-shadow:0 5px 10px rgba(0,0,0.2);
+}
+.Container .contactInfo{
+	width:50%;
+	display: flex;
+	flex-direction:column;
+}
+.Container .contactInfo .box{
+	position:relative;
+	padding:20px 0;
+	display: flex;
+}
+.Container .contactInfo .box .icon i{
+	min-width:80px;
+	height:80px;
+	background:#85c2ce;
+	justify-content:center;
+	align-items:center;
+	border-radius:50%;
+	font-size:35px;
+}
+.Container .contactInfo .box .text {
+	display:flex;
+	margin-left:20px;
+	font-size:16px;
+	flex-direction:column;
+	font-weight:300;
+}
+.Container .contactInfo .box .text h3{
+	font-weight:500;
+	color:#85c2ce;
+	font-size:20px;
+}
+ .contactForm{
+	width:40%;
+	padding:40px;
+}
+.contactForm h3{
+	font-size:30px;
+	color:#85c2ce;
+	font-weight:500;
+}
+.contactForm .inputBox{
+	position:relative;
+	width:100%;
+	margin-top:10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+	width:100%;
+	padding: 5px 0;
+	font-size:16px;
+	margin:10px 0;
+	border:none;
+	border-bottom:2px solid #333;
+	outline:none;
+	resize:none;
+}
+.contactForm .inputBox input[type="submit"]{
+	width:100px;
+	background:#85c2ce;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	padding:10px;
+	font-size:18px;
+}
