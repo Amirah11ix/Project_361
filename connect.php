@@ -10,14 +10,14 @@
 
 
 
-		if (empty($_POST['FullName']) OR empty ($_POST['number']))OR empty($_POST['email'])OR empty($_POST['password'])OR empty($_POST['catname'])){
+		if (empty($_POST['FullName']) OR empty ($_POST['number']) OR empty($_POST['email'])OR empty($_POST['password']) OR empty($_POST['catname'])){
 		echo  "Wrong";
 		}else{
 		  $con = mysqli_connect('localhost','root','','Form');
 		  if(!$con){
 		    die("con".mysqli_connect_error());
 		  }else{
-		  $sql = "INSERT INTO Adoption-Process-Form (FullName, number, email, password, catname, gender) VALUES ('$FullName','$number','$password','$catname','$gender')";
+		  $sql = "INSERT INTO `Adoption-Process-Form`(`FullName`, `password`, `catname`, `gender`, `email`, `number`) VALUES  ('$FullName','$password','$catname','$gender','$email','$number')";
 		if(mysqli_query($con,$sql)){
 		  echo "Added";
 
@@ -25,11 +25,12 @@
 		  die("Error".$sql.mysqli_error($con));
 		}
 		  }
-		}
-
-		 mysqli_close($con);
+			mysqli_close($con);
 
 		}
+
+
+	
 		 ?>
 
 
